@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+    <title>Rento - A Premium car renting service</title>
+    <link rel="stylesheet" href="/sass/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="rectangle"></div>
+      <!-- header section  -->
+      <header class="header">
+        <!-- navbar -->
+        <nav class="navbar">
+          <span class="logo">rento</span>
+
+          <ul class="nav_links">
+            <li><a class="nav_link" href="#">About Us</a></li>
+            <li><a class="nav_link" href="#">Cars</a></li>
+            <li><a class="nav_link" href="#">Futures</a></li>
+            <li><a class="nav_link" href="#">Help</a></li>
+
+            <div class="sign">
+              <button class="btn">
+                <img src="/img/android.svg" alt="android" class="android" />
+                Download App
+              </button>
+            </div>
+          </ul>
+        </nav>
+
+        <!-- hero section -->
+        <div class="hero_section">
+          <div class="text">
+            <h1 class="primary_heading">
+              Premium <br />
+              Car rental in <br />
+              Czech Republic
+            </h1>
+            <p class="header_text">
+              Don't deny yourself the pleasure of <br />
+              driving the best premium cars from <br />
+              all around the world here and now.
+            </p>
+            <a href="#" class="click">Click Here for More info &rarr;</a>
+          </div>
+          <div class="hero_img">
+            <img
+              src="/img/Vector.png"
+              alt="dots
+            "
+              class="dot-left"
+            />
+            <img
+              src="/img/Vector.png"
+              alt="dots
+            "
+              class="dot-right"
+            />
+            <div class="clip"></div>
+            <img class="hero_image" src="/img/lambo.png" alt="lambo" />
+          </div>
+        </div>
+        <div class="cars">
+          <img
+            src="/img/lamborghini.svg"
+            alt="lamborghini"
+            class="car"
+            onclick="imgSlider('/img/lambo.png');changeColor('linear-gradient(90deg, #fbfbfb 60%, #fedd10 40%)')"
+          />
+          <img
+            src="/img/maclaren.png"
+            alt="ferrai"
+            class="car"
+            onclick="imgSlider('/img/mclearn.png');changeColor('linear-gradient(90deg, #fbfbfb 60%, #71829e 40%)')"
+          />
+          <img
+            src="/img/kglogo.png"
+            alt="koenigsegg"
+            class="car"
+            onclick="imgSlider('/img/kg.png');changeColor('linear-gradient(90deg, #fbfbfb 60%, #0c6161 40%)')"
+          />
+          <img
+            src="/img/bmw.svg"
+            alt="bmw"
+            class="car"
+            onclick="imgSlider('/img/bmw3.png');changeColor('linear-gradient(90deg, #fbfbfb 60%, #b6b7b4 40%)')"
+          />
+          <img
+            src="/img/mercedes-benz-9.svg"
+            alt="mercedes"
+            class="car"
+            onclick="imgSlider('/img/mercedes.png');changeColor('linear-gradient(90deg, #fbfbfb 60%, #3d5c37 40%)')"
+          />
+          <img
+            src="/img/porschelogo.png"
+            alt="porsche"
+            class="car"
+            onclick="imgSlider('/img/prsh.png');changeColor('linear-gradient(90deg, #fbfbfb 60%, #070f29 40%)')"
+          />
+          <img
+            src="/img/mustanglogo.png"
+            alt="mustang"
+            class="car"
+            onclick="imgSlider('/img/mstng.png');changeColor('linear-gradient(90deg, #fbfbfb 60%, #a30001 40%)')"
+          />
+        </div>
+      </header>
+
+      <!-- featured section -->
+
+      <section class="featured">
+        <h3 class="secondary_heading">As featured in</h3>
+        <div class="featured_imgs">
+          <img
+            src="/img/techcrunch.png"
+            alt="techcrunch"
+            class="featured_img"
+          />
+          <img src="/img/business-insider.png" alt="bi" class="featured_img" />
+          <img
+            src="/img/the-new-york-times.png"
+            alt="nyt"
+            class="featured_img"
+          />
+
+          <img src="/img/forbes.png" alt="forbes" class="featured_img" />
+          <img src="/img/usa-today.png" alt="ustoday" class="featured_img" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

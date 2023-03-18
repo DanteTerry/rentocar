@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #2e2e2e;
+}
+
+::-moz-selection {
+  background-color: #54b454;
+}
+
+::selection {
+  background-color: #54b454;
+}
+
+.header {
+  padding: 1rem 12.5rem;
+  background-color: #fbfbfb;
+  height: 100vh;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+.header .navbar .logo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #54b454;
+  font-weight: 900;
+  cursor: pointer;
+}
+.header .navbar .nav_links {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  align-items: center;
+}
+.header .navbar .nav_link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+.header .navbar .nav_link:hover {
+  color: #54b454;
+}
+.header .navbar .sign .btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  background-color: #000;
+  font-family: inherit;
+  gap: 1rem;
+}
+.header .navbar .sign .btn .android {
+  width: 2.5rem;
+}
+.header .navbar .sign .btn:hover {
+  background-color: #54b454;
+  color: #fff;
+}
+.header .hero_section {
+  display: grid;
+  grid-template-columns: 50rem 1fr;
+  align-items: center;
+  padding: 8rem 0 0 0;
+  background: linear-gradient(90deg, #fbfbfb 60%, #fedd10 40%);
+  transition: all 0.3s ease;
+}
+.header .hero_section .text {
+  width: 50rem;
+}
+.header .hero_section .text .click {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  background-color: #54b454;
+  padding: 1rem 1.5rem;
+  border-radius: 100px;
+  margin-top: 2rem;
+  display: inline-block;
+  background-color: #fff;
+  outline: 2px solid #000;
+  color: #000;
+  transition: all 0.2s ease;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+.header .hero_section .text .click:hover {
+  background-color: #000;
+  color: #fff;
+}
+.header .hero_section .text .primary_heading {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.header .hero_section .text .header_text {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  color: #555;
+}
+.header .hero_section .hero_img {
+  position: relative;
+}
+.header .hero_section .hero_img .hero_image {
+  width: 85%;
+}
+.header .hero_section .hero_img .dot-right {
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+.header .download {
+  display: flex;
+  margin-top: 10rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.header .download .download_icons {
+  width: 15rem;
+  height: inherit;
+  cursor: pointer;
+}
+.header .cars {
+  display: flex;
+  margin-top: 9rem;
+  justify-content: space-evenly;
+}
+.header .cars .car {
+  height: 5.5rem;
+  cursor: pointer;
+}
+
+.featured {
+  padding: 6rem 12.5rem;
+}
+.featured .secondary_heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.featured .featured_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.featured .featured_imgs .featured_img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 80%;
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */

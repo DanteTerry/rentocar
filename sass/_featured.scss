@@ -1,0 +1,22 @@
+.featured {
+  padding: 6rem 12.5rem;
+
+  .secondary_heading {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .featured_imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+
+    .featured_img {
+      height: 3.2rem;
+      filter: brightness(0);
+      opacity: 80%;
+      margin-top: 2rem;
+    }
+  }
+}

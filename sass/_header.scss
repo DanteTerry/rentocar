@@ -1,0 +1,154 @@
+.header {
+  padding: 1rem 12.5rem;
+  background-color: #fbfbfb;
+
+  height: 100vh;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 1000;
+
+    .logo {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      color: #54b454;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .nav_links {
+      display: flex;
+      list-style: none;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .nav_link {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .nav_link:hover {
+      color: #54b454;
+    }
+
+    .sign {
+      .btn {
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        background-color: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-weight: 600;
+        background-color: #000;
+        font-family: inherit;
+        gap: 1rem;
+
+        .android {
+          width: 2.5rem;
+        }
+      }
+
+      .btn:hover {
+        background-color: #54b454;
+        color: #fff;
+      }
+    }
+  }
+  .hero_section {
+    display: grid;
+    grid-template-columns: 50rem 1fr;
+    align-items: center;
+    padding: 8rem 0 0 0;
+    background: linear-gradient(90deg, #fbfbfb 60%, #fedd10 40%);
+    transition: all 0.3s ease;
+
+    .text {
+      width: 50rem;
+
+      .click {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+        background-color: #54b454;
+        padding: 1rem 1.5rem;
+        border-radius: 100px;
+        margin-top: 2rem;
+        display: inline-block;
+        background-color: #fff;
+        outline: 2px solid #000;
+        color: #000;
+        transition: all 0.2s ease;
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+      }
+      .click:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      .primary_heading {
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+
+      .header_text {
+        font-size: 2rem;
+        margin-top: 2rem;
+        font-weight: 500;
+        color: #555;
+      }
+    }
+
+    .hero_img {
+      position: relative;
+
+      .hero_image {
+        width: 85%;
+      }
+
+      .dot-right {
+        position: absolute;
+        right: 0;
+        top: 25%;
+      }
+    }
+  }
+
+  .download {
+    display: flex;
+    margin-top: 10rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .download_icons {
+      width: 15rem;
+      height: inherit;
+      cursor: pointer;
+    }
+  }
+  .cars {
+    display: flex;
+    margin-top: 9rem;
+    justify-content: space-evenly;
+    .car {
+      height: 5.5rem;
+      cursor: pointer;
+    }
+  }
+}

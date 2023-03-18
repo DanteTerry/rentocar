@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #2e2e2e;
+}
+
+::selection {
+  background-color: #54b454;
+}
