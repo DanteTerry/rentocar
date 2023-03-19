@@ -1,0 +1,34 @@
+.book {
+  padding: 4rem 12.5rem;
+  background-color: #fbfbfb;
+
+  .book_car {
+    background-color: #111;
+    color: #fbfbfb;
+    padding: 2rem 4rem;
+    text-align: center;
+    border-radius: 20px;
+    .primary_heading {
+      margin-top: 2rem;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    .book_text {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .book_now {
+      font-size: 1.8rem;
+      font-family: inherit;
+      background-color: #fbfbfb;
+      padding: 1.5rem 3rem;
+      border-radius: 100px;
+      font-weight: 700;
+      color: #111;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.footer {
+  padding: 5rem 12.5rem;
+  background-color: #fbfbfb;
+
+  .foot {
+    border-radius: 10px;
+    background-color: #111;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    .primary_heading {
+      color: #54b454;
+      font-weight: 800;
+      margin-left: 2px;
+      display: inline-block;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      margin-left: 3px;
+
+      .icons {
+        width: 4rem;
+      }
+      .tweet {
+        width: 3rem;
+      }
+    }
+    .copy {
+      color: #fbfbfb;
+      margin-top: 5rem;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fbfbfb;
+      .heading {
+        font-weight: 600;
+      }
+
+      .text {
+      }
+
+      .footer_link {
+        text-decoration: none;
+        font-family: inherit;
+        color: inherit;
+        display: block;
+      }
+    }
+  }
+}

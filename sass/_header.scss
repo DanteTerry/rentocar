@@ -26,6 +26,7 @@
       list-style: none;
       gap: 3rem;
       align-items: center;
+      text-transform: uppercase;
     }
 
     .nav_link {
@@ -119,7 +120,6 @@
 
       .hero_image {
         width: 85%;
-        animation: forward 3s ease-in-out infinite;
       }
 
       .dot-right {
@@ -160,14 +160,14 @@
   }
 }
 
-@keyframes forward {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+// @keyframes forward {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   50% {
+//     transform: translateX(50px);
+//   }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }

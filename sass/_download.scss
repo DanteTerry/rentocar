@@ -1,0 +1,61 @@
+.app {
+  padding: 2rem 12.5rem;
+  background-color: #fbfbfb;
+
+  .get_app {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    align-items: stretch;
+    .video {
+      width: 60rem;
+      border-radius: 20px;
+    }
+    .video_text {
+      color: #111;
+
+      width: 60rem;
+      border-radius: 20px;
+      padding: 5rem;
+      .third_heading {
+        color: #646161;
+      }
+      .primary_heading {
+        font-size: 4rem;
+      }
+
+      .text {
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-align: initial;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        outline: none;
+        border: none;
+        border-radius: 100px;
+        background-color: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-weight: 600;
+        background-color: #000;
+        font-family: inherit;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .android {
+          width: 2.5rem;
+        }
+      }
+
+      .btn:hover {
+        background-color: #54b454;
+        color: #fff;
+      }
+    }
+  }
+}
