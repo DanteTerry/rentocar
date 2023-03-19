@@ -267,25 +267,29 @@ body {
   background: #fbfbfb;
 }
 .key .third_heading {
-  color: #7a7676;
+  color: #7c7878;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.4rem;
+  text-align: center;
 }
 .key .primary_heading {
   font-weight: 800;
   font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .key .key_text {
   font-weight: 600;
   font-size: 1.6rem;
   color: #393636;
+  text-align: center;
 }
 .key .key_box {
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  justify-content: center;
+  gap: 4rem;
 }
 .key .key_box .box {
   padding: 2rem 2rem;
@@ -300,7 +304,7 @@ body {
 .key .key_box .box .box_img {
   width: 4rem;
   border-radius: 50%;
-  padding: 5px;
+  padding: 7px;
 }
 .key .key_box .box .hour {
   background-color: #6ae46a;
