@@ -130,6 +130,7 @@ body {
   padding: 4rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
 }
 .footer .foot .primary_heading {
   color: #54b454;
