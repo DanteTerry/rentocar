@@ -1,0 +1,59 @@
+.key {
+  padding: 4rem 12.5rem;
+  background: #fbfbfb;
+
+  .third_heading {
+    color: #7a7676;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .primary_heading {
+    font-weight: 800;
+    font-size: 3.5rem;
+  }
+
+  .key_text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #393636;
+  }
+
+  .key_box {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    .box {
+      padding: 2rem 2rem;
+      height: 25rem;
+      width: 25rem;
+      border-radius: 20px;
+      border: 3px solid rgb(203, 199, 199);
+
+      .box_text {
+        font-weight: 600;
+      }
+
+      .box_img {
+        width: 4rem;
+        border-radius: 50%;
+        padding: 5px;
+      }
+
+      .hour {
+        background-color: #6ae46a;
+      }
+      .chat {
+        background-color: #f5ced5;
+      }
+
+      .premium {
+        background-color: #f1c2f1;
+      }
+      .confi {
+        background-color: wheat;
+      }
+    }
+  }
+}

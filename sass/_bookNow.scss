@@ -1,0 +1,58 @@
+.book_container {
+  padding: 3rem 12.5rem;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+
+  .book_now {
+    padding: 3rem 2rem;
+    border-radius: 10px;
+
+    .secondary_heading {
+      text-align: center;
+      display: block;
+    }
+
+    .form {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 1.5rem;
+
+      .label {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: inherit;
+        color: inherit;
+        font-weight: 500;
+        font-size: 1.8;
+        text-align: start;
+
+        .input {
+          width: 18rem;
+          height: 3.5rem;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+          outline-style: none;
+          padding: 1rem 2rem;
+          font-family: inherit;
+          color: inherit;
+          font-weight: 400;
+        }
+      }
+
+      .btn {
+        padding: 1rem 4rem;
+        align-self: flex-end;
+        border: none;
+        border-radius: 5px;
+        background-color: #5f8cff;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.8;
+        cursor: pointer;
+      }
+    }
+  }
+}

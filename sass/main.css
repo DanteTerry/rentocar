@@ -21,10 +21,93 @@ body {
 
 ::-moz-selection {
   background-color: #54b454;
+  color: #fff;
 }
 
 ::selection {
   background-color: #54b454;
+  color: #fff;
+}
+
+.car_feet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 12.5rem;
+  background-color: #fbfbfb;
+}
+.car_feet .third_heading {
+  text-align: center;
+  color: rgb(122, 118, 118);
+  text-transform: uppercase;
+}
+.car_feet .primary_heading {
+  text-align: center;
+  font-size: 5rem;
+  color: #000;
+}
+.car_feet .car_text {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.car_feet .car_filter {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.car_feet .car_filter .filter {
+  font-size: 1.6rem;
+  color: inherit;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fbfbfb;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.car_feet .car_filter .filter:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.car_feet .imgs {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.car_feet .imgs .img {
+  width: 22rem;
+  border-radius: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.car_feet .imgs .width {
+  width: 26rem;
+}
+.car_feet .show {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #111;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  margin-top: 4rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.car_feet .show:hover {
+  background-color: #111;
+  color: #fbfbfb;
 }
 
 .header {
@@ -134,6 +217,7 @@ body {
 }
 .header .hero_section .hero_img .hero_image {
   width: 85%;
+  animation: forward 3s ease-in-out infinite;
 }
 .header .hero_section .hero_img .dot-right {
   position: absolute;
@@ -160,10 +244,80 @@ body {
 .header .cars .car {
   height: 5.5rem;
   cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.header .cars .car:first-child {
+  opacity: 1;
+}
+
+@keyframes forward {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.key {
+  padding: 4rem 12.5rem;
+  background: #fbfbfb;
+}
+.key .third_heading {
+  color: #7a7676;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.key .primary_heading {
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+.key .key_text {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #393636;
+}
+.key .key_box {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.key .key_box .box {
+  padding: 2rem 2rem;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 20px;
+  border: 3px solid rgb(203, 199, 199);
+}
+.key .key_box .box .box_text {
+  font-weight: 600;
+}
+.key .key_box .box .box_img {
+  width: 4rem;
+  border-radius: 50%;
+  padding: 5px;
+}
+.key .key_box .box .hour {
+  background-color: #6ae46a;
+}
+.key .key_box .box .chat {
+  background-color: #f5ced5;
+}
+.key .key_box .box .premium {
+  background-color: #f1c2f1;
+}
+.key .key_box .box .confi {
+  background-color: wheat;
 }
 
 .featured {
   padding: 6rem 12.5rem;
+  background-color: #fbfbfb;
 }
 .featured .secondary_heading {
   text-align: center;
@@ -180,4 +334,57 @@ body {
   filter: brightness(0);
   opacity: 80%;
   margin-top: 2rem;
+}
+
+.book_container {
+  padding: 3rem 12.5rem;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+}
+.book_container .book_now {
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+.book_container .book_now .secondary_heading {
+  text-align: center;
+  display: block;
+}
+.book_container .book_now .form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.book_container .book_now .form .label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 500;
+  font-size: 1.8;
+  text-align: start;
+}
+.book_container .book_now .form .label .input {
+  width: 18rem;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  outline-style: none;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 400;
+}
+.book_container .book_now .form .btn {
+  padding: 1rem 4rem;
+  align-self: flex-end;
+  border: none;
+  border-radius: 5px;
+  background-color: #5f8cff;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

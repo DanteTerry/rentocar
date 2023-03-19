@@ -119,6 +119,7 @@
 
       .hero_image {
         width: 85%;
+        animation: forward 3s ease-in-out infinite;
       }
 
       .dot-right {
@@ -149,6 +150,24 @@
     .car {
       height: 5.5rem;
       cursor: pointer;
+      opacity: 0.7;
+      transition: all 0.3s ease;
     }
+
+    .car:first-child {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes forward {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

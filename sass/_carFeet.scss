@@ -1,0 +1,87 @@
+.car_feet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 12.5rem;
+  background-color: #fbfbfb;
+
+  .third_heading {
+    text-align: center;
+    color: rgb(122, 118, 118);
+    text-transform: uppercase;
+  }
+
+  .primary_heading {
+    text-align: center;
+    font-size: 5rem;
+    color: #000;
+  }
+
+  .car_text {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .car_filter {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    .filter {
+      font-size: 1.6rem;
+      color: inherit;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background-color: #000;
+      color: #fbfbfb;
+      font-family: inherit;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .filter:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .imgs {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    .img {
+      width: 22rem;
+      border-radius: 25px;
+      object-fit: contain;
+    }
+    .width {
+      width: 26rem;
+    }
+  }
+
+  .show {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #111;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    margin-top: 4rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #111;
+      color: #fbfbfb;
+    }
+  }
+}
