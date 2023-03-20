@@ -2,8 +2,10 @@
 const scroller = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]"),
   smooth: true,
-  repeat: true,
 });
+new ResizeObserver(() => scroll.update()).observe(
+  document.querySelector("[data-scroll-container]")
+);
 
 function imgSlider(anything) {
   document.querySelector(".hero_image").src = anything;
