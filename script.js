@@ -1,4 +1,9 @@
 "use strict";
+const scroller = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,
+  repeat: true,
+});
 
 function imgSlider(anything) {
   document.querySelector(".hero_image").src = anything;

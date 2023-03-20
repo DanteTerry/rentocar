@@ -1,5 +1,5 @@
 .header {
-  padding: 1rem 12.5rem;
+  padding: 2rem 12.5rem;
   background-color: #fbfbfb;
 
   height: 100vh;
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
     z-index: 1000;
 
     .logo {

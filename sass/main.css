@@ -87,7 +87,7 @@ body {
 }
 
 .book {
-  padding: 4rem 12.5rem;
+  padding: 2rem 12.5rem;
   background-color: #fbfbfb;
 }
 .book .book_car {
@@ -121,7 +121,7 @@ body {
 }
 
 .footer {
-  padding: 5rem 12.5rem;
+  padding: 2rem 12.5rem;
   background-color: #fbfbfb;
 }
 .footer .foot {
@@ -174,7 +174,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 4rem 12.5rem;
+  padding: 2rem 12.5rem;
   background-color: #fbfbfb;
 }
 .car_feet .third_heading {
@@ -251,7 +251,7 @@ body {
 }
 
 .header {
-  padding: 1rem 12.5rem;
+  padding: 2rem 12.5rem;
   background-color: #fbfbfb;
   height: 100vh;
 }
@@ -259,7 +259,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   z-index: 1000;
 }
 .header .navbar .logo {
@@ -390,7 +390,7 @@ body {
 }
 
 .key {
-  padding: 4rem 12.5rem;
+  padding: 2rem 12.5rem;
   background: #fbfbfb;
   text-align: center;
 }
@@ -466,7 +466,7 @@ body {
 }
 
 .book_container {
-  padding: 3rem 12.5rem;
+  padding: 2rem 12.5rem;
   background-color: #fbfbfb;
   margin: 0 auto;
 }

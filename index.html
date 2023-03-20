@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
     <title>Rento - A Premium car renting service</title>
-    <link rel="stylesheet" href="/sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,16 +14,21 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="/sass/main.css" />
   </head>
-  <body>
-    <main class="container">
-      <div class="rectangle"></div>
+  <body data-scroll-container>
+    <main data-scroll-container class="container">
       <!-- header section  -->
-      <header class="header">
+      <header data-scroll-section class="header">
         <!-- navbar -->
         <nav class="navbar">
           <span class="logo">rento</span>
@@ -49,7 +53,7 @@
           <div class="text">
             <h1 class="primary_heading">
               Premium <br />
-              Car rental in <br />
+              Car Rent in <br />
               Czech Republic
             </h1>
             <p class="header_text">
@@ -73,7 +77,13 @@
               class="dot-right"
             />
             <div class="clip"></div>
-            <img class="hero_image" src="/img/lambo.png" alt="lambo" />
+            <img
+              data-scroll
+              data-scroll-direction="horizontal"
+              class="hero_image"
+              src="/img/lambo.png"
+              alt="lambo"
+            />
           </div>
         </div>
         <div class="cars">
@@ -145,7 +155,7 @@
       </section> -->
 
       <!-- key features -->
-      <section class="key_features">
+      <section data-scroll-section class="key_features">
         <div class="key">
           <h3 class="third_heading">Taking care of every client</h3>
           <h1 class="primary_heading">Why Us ?</h1>
@@ -201,7 +211,7 @@
 
       <!-- car feet-->
 
-      <section class="car_feet">
+      <section data-scroll-section class="car_feet">
         <h3 class="third_heading">only best cars</h3>
         <h1 class="primary_heading">Our Vehicle Fleet</h1>
         <p class="car_text">
@@ -244,6 +254,8 @@
             src="/img/yannis-zaugg-D1ikFIycIHk-unsplash.jpg"
             alt="premium"
             class="img"
+            data-scroll
+            data-scroll-direction="horizontal"
           />
           <img
             src="/img/olav-tvedt-6lSBynPRaAQ-unsplash.jpg"
@@ -261,17 +273,17 @@
         <a href="#" class="show">Show All &rarr;</a>
       </section>
 
-      <section class="book">
+      <section data-scroll-section class="book">
         <div class="book_car">
-          <h1 class="primary_heading">Drive with RENTA Today</h1>
+          <h1 class="primary_heading">Drive with RENTO Today</h1>
           <p class="book_text">
-            "Get behind the wheel of a premium car - Reserve your rental now!"
+            "Get behind the wheel of a premium car - Reserve your RENTOl now!"
           </p>
           <button class="book_now">Book Now</button>
         </div>
       </section>
 
-      <section class="app">
+      <section data-scroll-section class="app">
         <div class="get_app">
           <div class="video_div">
             <video
@@ -298,8 +310,8 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="foot">
+      <footer data-scroll-container class="footer">
+        <div data-scroll-section class="foot">
           <div class="col">
             <h1 class="primary_heading">RENTO</h1>
             <div class="social">
@@ -309,15 +321,15 @@
             </div>
 
             <p class="copy">
-              Copyright © 2023 by Omnifood, <br />
-              Inc. All rights reserved.
+              Copyright © 2023 <br />
+              by RENTO Inc. <br />All rights reserved.
             </p>
           </div>
           <div class="col">
             <h3 class="heading">Contact Us</h3>
             <p class="text">Dvur Kralove</p>
             <a href="#" class="footer_link">+420 4565656</a>
-            <a href="#" class="footer_link">renta@renta.com</a>
+            <a href="#" class="footer_link">rento@rento.com</a>
           </div>
           <div class="col">
             <h3 class="heading">Account</h3>
@@ -328,7 +340,7 @@
           </div>
           <div class="col">
             <h3 class="heading">Company</h3>
-            <a href="#" class="footer_link">About RENTA</a>
+            <a href="#" class="footer_link">About RENTO</a>
             <a href="#" class="footer_link">Branches</a>
             <a href="#" class="footer_link">Careers</a>
             <a href="#" class="footer_link">For Business</a>
@@ -343,6 +355,7 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
