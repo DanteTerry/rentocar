@@ -1,11 +1,10 @@
 "use strict";
-const scroller = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
+window.addEventListener("load", () => {
+  new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+  });
 });
-new ResizeObserver(() => scroll.update()).observe(
-  document.querySelector("[data-scroll-container]")
-);
 
 function imgSlider(anything) {
   document.querySelector(".hero_image").src = anything;
