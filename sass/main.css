@@ -196,8 +196,10 @@ body {
   margin-top: 4rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .car_feet .car_filter .filter {
+  margin-top: 1rem;
   font-size: 1.6rem;
   color: inherit;
   padding: 1rem 2rem;
@@ -356,11 +358,16 @@ body {
 }
 .header .hero_section .hero_img .hero_image {
   width: 85%;
+  animation: forward 3s ease infinite forwards;
+}
+.header .hero_section .hero_img .dot-left {
+  width: 10%;
 }
 .header .hero_section .hero_img .dot-right {
   position: absolute;
   right: 0;
   top: 25%;
+  width: 10%;
 }
 .header .download {
   display: flex;
@@ -389,6 +396,17 @@ body {
   opacity: 1;
 }
 
+@keyframes forward {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .key {
   padding: 2rem 12.5rem;
   background: #fbfbfb;

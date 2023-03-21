@@ -28,7 +28,9 @@
     margin-top: 4rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .filter {
+      margin-top: 1rem;
       font-size: 1.6rem;
       color: inherit;
       padding: 1rem 2rem;
