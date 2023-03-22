@@ -6,8 +6,6 @@ window.addEventListener("load", () => {
   });
 });
 
-const book = document.querySelector(".bookNow");
-
 // changing the header images
 function imgSlider(anything) {
   document.querySelector(".hero_image").src = anything;
@@ -32,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// open and close book modal
 const close = document.querySelector(".close");
 const modal = document.querySelector(".overlay");
 const openModal = document.querySelector(".openForm");
@@ -44,3 +44,8 @@ close.addEventListener("click", function (e) {
   e.preventDefault;
   modal.classList.add("hidden");
 });
+
+// default select element
+window.onload = function () {
+  document.querySelector(".vehicle").selectedIndex = 0;
+};

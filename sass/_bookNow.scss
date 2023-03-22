@@ -6,6 +6,7 @@
   top: 0%;
   left: 0;
   background-color: #333;
+  backdrop-filter: blur(10px);
 
   .bookNow {
     background-color: #fbfbfb;
@@ -101,6 +102,8 @@
             .vehicle .options {
               text-transform: uppercase;
               font-size: 1.6rem;
+              background-color: #333;
+              color: #fbfbfb;
             }
           }
           .box {
@@ -122,8 +125,11 @@
       }
 
       .selected_img {
+        width: 65%;
+        display: flex;
+        justify-content: center;
         .selected_imgs {
-          width: 50rem;
+          width: 65%;
         }
       }
     }
@@ -134,7 +140,7 @@
       justify-content: center;
       margin-top: 5rem;
       .btn {
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
         outline: none;
         border: none;
         border-radius: 100px;
@@ -146,6 +152,7 @@
         font-weight: 600;
         background-color: #000;
         font-family: inherit;
+        font-size: 2rem;
 
         .android {
           width: 2.5rem;
