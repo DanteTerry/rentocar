@@ -48,6 +48,10 @@
         font-family: inherit;
         color: inherit;
         display: block;
+        transition: all 0.4s ease;
+        &:hover {
+          color: #54b454;
+        }
       }
     }
   }

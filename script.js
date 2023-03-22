@@ -6,15 +6,20 @@ window.addEventListener("load", () => {
   });
 });
 
+const book = document.querySelector(".bookNow");
+
+// changing the header images
 function imgSlider(anything) {
   document.querySelector(".hero_image").src = anything;
 }
 
+// changing color of header
 function changeColor(color) {
   const bg = document.querySelector(".hero_section");
   bg.style.background = color;
 }
 
+// chaning car logo opacity
 document.addEventListener("DOMContentLoaded", function () {
   const carsLogo = document.querySelectorAll(".car");
 
@@ -26,4 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
       carLogo.style.opacity = "1";
     });
   });
+});
+const close = document.querySelector(".close");
+const modal = document.querySelector(".overlay");
+const openModal = document.querySelector(".openForm");
+openModal.addEventListener("click", function (e) {
+  e.preventDefault;
+  modal.classList.remove("hidden");
+});
+
+close.addEventListener("click", function (e) {
+  e.preventDefault;
+  modal.classList.add("hidden");
 });

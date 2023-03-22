@@ -167,6 +167,10 @@ body {
   font-family: inherit;
   color: inherit;
   display: block;
+  transition: all 0.4s ease;
+}
+.footer .foot .col .footer_link:hover {
+  color: #54b454;
 }
 
 .car_feet {
@@ -483,55 +487,149 @@ body {
   margin-top: 2rem;
 }
 
-.book_container {
+.overlay {
+  width: 100%;
+  height: 100%;
   padding: 2rem 12.5rem;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  background-color: #333;
+}
+.overlay .bookNow {
   background-color: #fbfbfb;
-  margin: 0 auto;
-}
-.book_container .book_now {
-  padding: 3rem 2rem;
   border-radius: 10px;
+  padding: 2rem;
+  height: 100%;
 }
-.book_container .book_now .secondary_heading {
-  text-align: center;
-  display: block;
-}
-.book_container .book_now .form {
+.overlay .bookNow .head {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+.overlay .bookNow .head .primary_heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #54b454;
+  font-weight: 900;
+  cursor: pointer;
+}
+.overlay .bookNow .head .close {
+  width: 4rem;
+  cursor: pointer;
+}
+.overlay .bookNow .progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay .bookNow .progress .numbers {
+  padding: 1rem 2rem;
+  width: 100rem;
+  display: flex;
+  justify-content: space-around;
+  color: inherit;
+  font-weight: 700;
+}
+.overlay .bookNow .progress .numbers .number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay .bookNow .progress .numbers .number .span_text {
+  display: block;
+  text-transform: uppercase;
+}
+.overlay .bookNow .progress .numbers .number .span_num {
+  font-size: 1.8rem;
+  padding: 3px 13px;
+  border: 3px solid #333;
+  border-radius: 50%;
   margin-top: 1.5rem;
 }
-.book_container .book_now .form .label {
+.overlay .bookNow .progress .numbers .number .one {
+  padding: 3px 14px;
+}
+.overlay .bookNow .selectCar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  align-items: center;
+}
+.overlay .bookNow .selectCar .select .form {
+  padding: 1rem 2rem;
+}
+.overlay .bookNow .selectCar .select .form .label {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-family: inherit;
-  color: inherit;
-  font-weight: 500;
-  font-size: 1.8;
-  text-align: start;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
-.book_container .book_now .form .label .input {
-  width: 18rem;
-  height: 3.5rem;
-  border: none;
-  outline: none;
+.overlay .bookNow .selectCar .select .form .label .vehicle {
+  width: 30rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+  background: transparent;
+  border: 2px solid #54b454;
+  padding: 1rem 1rem;
+  font-size: 1.8rem;
   border-radius: 10px;
-  outline-style: none;
-  padding: 1rem 2rem;
-  font-family: inherit;
-  color: inherit;
-  font-weight: 400;
+  margin-bottom: 2rem;
 }
-.book_container .book_now .form .btn {
-  padding: 1rem 4rem;
-  align-self: flex-end;
+.overlay .bookNow .selectCar .select .form .label .vehicle .options {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.overlay .bookNow .selectCar .select .form .box {
+  display: flex;
+  align-items: center;
+}
+.overlay .bookNow .selectCar .select .form .box .checkbox {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.overlay .bookNow .selectCar .select .form .box .checkbox .input {
+  margin-right: 1rem;
+  zoom: 1.5;
+  transform: scale(1.5);
+}
+.overlay .bookNow .selectCar .selected_img .selected_imgs {
+  width: 50rem;
+}
+.overlay .bookNow .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.overlay .bookNow .button .btn {
+  padding: 1rem 2rem;
+  outline: none;
   border: none;
-  border-radius: 5px;
-  background-color: #5f8cff;
+  border-radius: 100px;
+  background-color: transparent;
   color: #fff;
-  font-weight: 400;
-  font-size: 1.8;
+  text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  background-color: #000;
+  font-family: inherit;
+}
+.overlay .bookNow .button .btn .android {
+  width: 2.5rem;
+}
+.overlay .bookNow .button .btn:hover {
+  background-color: #54b454;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

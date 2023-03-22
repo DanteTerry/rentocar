@@ -37,14 +37,14 @@
             <li><a class="nav_link" href="#">Help</a></li>
 
             <div class="sign">
-              <button class="btn">Book Now</button>
+              <button class="btn openForm">Book Now</button>
             </div>
           </ul>
         </nav>
 
         <!-- hero section -->
         <div class="hero_section">
-          <div class="text">
+          <div id="why" class="text">
             <h1 class="primary_heading">
               Premium <br />
               Car Rent in <br />
@@ -143,7 +143,7 @@
       </section> -->
 
       <!-- key features -->
-      <section data-scroll-section class="key_features">
+      <section id="why" data-scroll-section class="key_features">
         <div class="key">
           <h3 class="third_heading">Taking care of every client</h3>
           <h1 class="primary_heading">Why Us ?</h1>
@@ -265,7 +265,7 @@
         <div class="book_car">
           <h1 class="primary_heading">Drive with RENTO Today</h1>
           <p class="book_text">
-            "Get behind the wheel of a premium car - Reserve your RENTAl now!"
+            "Get behind the wheel of a premium car - Reserve your RENTAL now!"
           </p>
           <button class="book_now">Book Now</button>
         </div>
@@ -298,7 +298,7 @@
           </div>
         </div>
       </section>
-      <footer data-scroll-section="" class="footer">
+      <footer data-scroll-section class="footer">
         <div class="foot">
           <div class="col">
             <h1 class="primary_heading">RENTO</h1>
@@ -342,6 +342,80 @@
           </div>
         </div>
       </footer>
+      <section data-scroll-section class="overlay">
+        <div class="bookNow">
+          <div class="head">
+            <h1 class="primary_heading">Rento</h1>
+            <img src="/img/close.svg" alt="close icon" class="close" />
+          </div>
+          <div class="progress">
+            <div class="numbers">
+              <div class="number">
+                <span class="span_text">Vehicle</span>
+                <span class="span_num one">1</span>
+              </div>
+              <div class="number">
+                <span class="span_text">Licence</span>
+                <span class="span_num">2</span>
+              </div>
+              <div class="number">
+                <span class="span_text">Payment</span>
+                <span class="span_num">3</span>
+              </div>
+            </div>
+          </div>
+          <div class="selectCar">
+            <div class="select">
+              <form class="form">
+                <label for="vehicle" class="label"
+                  >BRAND
+                  <select name="vehicle" class="vehicle">
+                    <option class="options">CHOOSE YOUR BRAND</option>
+                    <option class="options" value="lamborghini ">
+                      LAMBORGHINI
+                    </option>
+                    <option class="options" value="mclaren">MCLAREN</option>
+                    <option class="options" value="rolls-royce">
+                      ROLLS ROYCE
+                    </option>
+                    <option class="options" value="bmw">BMW</option>
+                    <option class="options" value="mercedes">MERCEDES</option>
+                    <option class="options" value="porsche">PORSCHE</option>
+                    <option class="options" value="mustang">FORD</option>
+                  </select></label
+                >
+                <label for="vehicle" class="label"
+                  >modal
+                  <select name="vehicle" class="vehicle" required>
+                    <option class="options" value="choose" selected>
+                      SELECT BRAND FIRST
+                    </option>
+                  </select></label
+                >
+                <div class="box">
+                  <label for="checkbox" class="checkbox"
+                    ><input
+                      type="checkbox"
+                      name="checkbox"
+                      class="input"
+                    />Include Fuel</label
+                  >
+                </div>
+              </form>
+            </div>
+            <div class="selected_img">
+              <img
+                src="/img/blue-lamborghini-aventador-car.png"
+                alt="lambo"
+                class="selected_imgs"
+              />
+            </div>
+          </div>
+          <div class="button">
+            <button class="btn">Next &rarr;</button>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="/locomotive.min.js"></script>
     <script src="/script.js"></script>
