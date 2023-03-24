@@ -583,17 +583,16 @@ body {
   border-radius: 10px;
   margin-bottom: 2rem;
 }
-.overlay .bookNow .selectCar .select .form .label .vehicle .options {
-  text-transform: uppercase;
+.overlay .bookNow .selectCar .select .form .label .options {
   font-size: 1.6rem;
   background-color: #333;
   color: #fbfbfb;
-}
-.overlay .bookNow .selectCar .select .form .box {
-  display: flex;
-  align-items: center;
+  text-transform: uppercase;
 }
 .overlay .bookNow .selectCar .select .form .box .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -601,15 +600,12 @@ body {
 .overlay .bookNow .selectCar .select .form .box .checkbox .input {
   margin-right: 1rem;
   zoom: 1.5;
-  transform: scale(1.5);
+  transform: scale(2);
 }
-.overlay .bookNow .selectCar .selected_img {
-  width: 65%;
+.overlay .bookNow .selectCar .selected_imgs {
+  width: 50%;
   display: flex;
   justify-content: center;
-}
-.overlay .bookNow .selectCar .selected_img .selected_imgs {
-  width: 65%;
 }
 .overlay .bookNow .button {
   display: flex;

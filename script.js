@@ -49,3 +49,71 @@ close.addEventListener("click", function (e) {
 window.onload = function () {
   document.querySelector(".vehicle").selectedIndex = 0;
 };
+
+// rendering select option dynamically
+
+const selectBrand = document.querySelector(".vehicle");
+const selectModal = document.querySelector("#modal");
+const formImg = document.querySelector(".selected_imgs");
+
+selectBrand.addEventListener("change", function () {
+  const selectedValue = selectBrand.value;
+
+  if (selectedValue === "lamborghini") {
+    selectModal.innerHTML = `
+    <option class="options" value="choose" selected>SELECT MODAL</option>
+    <option class="options" value="lamborghiniaventador">Lamborghini Aventador</option>
+    <option class="options" value="lamborghinihuracan">Lamborghini Huracan</option>
+    <option class="options" value="lamborghinigallardo">Lamborghini Gallardo</option>
+    <option class="options" value="lamborghinimurcielago">Lamborghini Murcielago</option>
+    <option class="options" value="lamborghinicountach">Lamborghini Countach</option>`;
+  } else if (selectedValue === "ferrari") {
+    selectModal.innerHTML = `
+    <option class="options" value="choose" selected>SELECT MODAL</option>
+    <option class="options" value="ferrari488">Ferrari 488 GTB</option>
+    <option class="options" value="ferrari812">Ferrari 812 Superfast</option>
+    <option class="options" value="ferrariF8">Ferrari F8 Tributo</option>
+    <option class="options" value="ferrarilaFerrari">Ferrari LaFerrari</option>
+    <option class="options" value="frerrariroma">Ferrari Roma</option>`;
+  } else if (selectedValue === "ford") {
+    selectModal.innerHTML = `
+    <option class="options" value="choose" selected>SELECT MODAL</option>
+    <option class="options" value="FordGT">Ford GT</option>
+    <option class="options" value="mustang">Ford Mustang GT</option>
+    <option class="options" value="shelby">Ford Shelby GT350</option>
+    <option class="options" value="mach1">Ford Mustang Mach 1</option>
+    <option class="options" value="GT500">Ford Mustang Shelby GT500</option>`;
+  } else if (selectedValue === "porsche") {
+    selectModal.innerHTML = `
+    <option class="options" value="choose" selected>SELECT MODAL</option>
+    <option class="options" value="911">Porsche 911 GT3</option>
+    <option class="options" value="GT2">Porsche 911 GT2 RS</option>
+    <option class="options" value="718">Porsche 718 Cayman GT4</option>
+    <option class="options" value="718spyder">Porsche 718 Spyder</option>
+    <option class="options" value="panamera">Porsche Panamera Turbo S </option>`;
+  } else if (selectedValue === "mclaren") {
+    selectModal.innerHTML = `
+    <option class="options" value="choose" selected>SELECT MODAL</option>
+    <option class="options" value="p1">McLaren P1</option>
+    <option class="options" value="720s">McLaren 720S</option>
+    <option class="options" value="570s">McLaren 570S</option>
+    <option class="options" value="senna">McLaren Senna</option>
+    <option class="options" value="mcLarengt">McLaren GT</option>`;
+  } else if (selectedValue === "mercedes") {
+    selectModal.innerHTML = `
+    <option class="options" value="choose" selected>SELECT MODAL</option>
+    <option class="options" value="sclass">Mercedes-Benz S-Class</option>
+    <option class="options" value="amggt">Mercedes-Benz AMG GT</option>
+    <option class="options" value="gclass">Mercedes-Benz G-Class</option>
+    <option class="options" value="cls">Mercedes-Benz CLS-Class</option>
+    <option class="options" value="eclass">Mercedes-Benz E-Class</option>`;
+  } else if (selectedValue === "rolls-royce") {
+    selectModal.innerHTML = `
+    <option class="options" value="choose" selected>SELECT MODAL</option>
+    <option class="options" value="phantom">Rolls-Royce Phantom</option>
+    <option class="options" value="ghost">Rolls-Royce Ghost</option>
+    <option class="options" value="wraith">Rolls-Royce Wraith</option>
+    <option class="options" value="dawn">Rolls-Royce Dawn</option>
+    <option class="options" value="cullinan">Rolls-Royce Cullinan</option>`;
+  }
+});

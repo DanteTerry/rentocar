@@ -370,13 +370,13 @@
                 <label for="vehicle" class="label"
                   >BRAND
                   <select name="vehicle" class="vehicle">
-                    <option class="options">CHOOSE YOUR BRAND</option>
-                    <option class="options" value="bmw">BMW</option>
-                    <option class="options" value="mustang">FORD</option>
+                    <option class="options" selected>CHOOSE YOUR BRAND</option>
+                    <option class="options" value="ford">FORD</option>
+                    <option class="options" value="ferrari">FERRARI</option>
                     <option class="options" value="porsche">PORSCHE</option>
                     <option class="options" value="mclaren">MCLAREN</option>
                     <option class="options" value="mercedes">MERCEDES</option>
-                    <option class="options" value="lamborghini ">
+                    <option class="options" value="lamborghini">
                       LAMBORGHINI
                     </option>
                     <option class="options" value="rolls-royce">
@@ -386,12 +386,10 @@
                 >
                 <label for="vehicle" class="label"
                   >modal
-                  <select name="vehicle" class="vehicle" required>
-                    <option class="options" value="choose" selected>
-                      SELECT BRAND FIRST
-                    </option>
-                  </select></label
-                >
+                  <select name="vehicle" class="vehicle" id="modal" required>
+                    <option class="option" selected>SELECT BRAND FIRST</option>
+                  </select>
+                </label>
                 <div class="box">
                   <label for="checkbox" class="checkbox"
                     ><input
@@ -403,13 +401,8 @@
                 </div>
               </form>
             </div>
-            <div class="selected_img">
-              <img
-                src="/img/blue-lamborghini-aventador-car.png"
-                alt="lambo"
-                class="selected_imgs"
-              />
-            </div>
+
+            <img src="/img/group3.png" alt="lambo" class="selected_imgs" />
           </div>
           <div class="button">
             <button class="btn">Next &rarr;</button>
@@ -417,7 +410,7 @@
         </div>
       </section>
     </main>
-    <script src="/locomotive.min.js"></script>
     <script src="/script.js"></script>
+    <script src="/locomotive.min.js"></script>
   </body>
 </html>
