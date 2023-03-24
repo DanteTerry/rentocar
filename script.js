@@ -64,9 +64,24 @@ selectBrand.addEventListener("change", function () {
     <option class="options" value="choose" selected>SELECT MODAL</option>
     <option class="options" value="lamborghiniaventador">Lamborghini Aventador</option>
     <option class="options" value="lamborghinihuracan">Lamborghini Huracan</option>
-    <option class="options" value="lamborghinigallardo">Lamborghini Gallardo</option>
-    <option class="options" value="lamborghinimurcielago">Lamborghini Murcielago</option>
+    <option class="options" value="urus">Lamborghini Urus</option>
+    <option class="options" value="sian">Lamborghini Sian</option>
     <option class="options" value="lamborghinicountach">Lamborghini Countach</option>`;
+    selectModal.addEventListener("change", function () {
+      const selectedModal = selectModal.value;
+
+      if (selectedModal === "lamborghiniaventador") {
+        formImg.src = "/img/blue-lamborghini-aventador-car.png";
+      } else if (selectedModal === "lamborghinihuracan") {
+        formImg.src = "/img/lamborghinihuracan.png";
+      } else if (selectedModal === "urus") {
+        formImg.src = "/img/urus.png";
+      } else if (selectedModal === "sian") {
+        formImg.src = "/img/sian.png";
+      } else if (selectedModal === "lamborghinicountach") {
+        formImg.src = "/img/lamboCoun.png";
+      }
+    });
   } else if (selectedValue === "ferrari") {
     selectModal.innerHTML = `
     <option class="options" value="choose" selected>SELECT MODAL</option>
@@ -83,6 +98,21 @@ selectBrand.addEventListener("change", function () {
     <option class="options" value="shelby">Ford Shelby GT350</option>
     <option class="options" value="mach1">Ford Mustang Mach 1</option>
     <option class="options" value="GT500">Ford Mustang Shelby GT500</option>`;
+    selectModal.addEventListener("change", function () {
+      const selectedModal = selectModal.value;
+
+      if (selectedModal === "FordGT") {
+        formImg.src = "/img/fordgt.png";
+      } else if (selectedModal === "mustang") {
+        formImg.src = "/img/mustanggt.png";
+      } else if (selectedModal === "shelby") {
+        formImg.src = "/img/350.png";
+      } else if (selectedModal === "GT500") {
+        formImg.src = "/img/gt500.png";
+      } else if (selectedModal === "mach1") {
+        formImg.src = "/img/mach 1.png";
+      }
+    });
   } else if (selectedValue === "porsche") {
     selectModal.innerHTML = `
     <option class="options" value="choose" selected>SELECT MODAL</option>
