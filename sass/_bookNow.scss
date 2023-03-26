@@ -1,6 +1,5 @@
 .overlay {
   width: 100%;
-  height: 100%;
   padding: 2rem 12.5rem;
   position: absolute;
   top: 0%;
@@ -55,71 +54,77 @@
           }
 
           .span_num {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 1.8rem;
-            padding: 3px 12px;
+            text-align: center;
             border: 3px solid #333;
             border-radius: 50%;
             margin-top: 1.5rem;
-          }
-
-          .one {
-            padding: 3px 15px;
+            height: 40px;
+            width: 40px;
+            position: relative;
           }
         }
       }
     }
 
-    .selectCar {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 5rem;
-      align-items: center;
-
+    .container {
       .select {
-        .form {
-          padding: 1rem 2rem;
-          .label {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 2.5rem;
+        margin-top: 5rem;
+        .vehicle {
+          display: flex;
+          justify-content: space-evenly;
+          // margin-top: 5rem;
+          align-items: center;
 
-            .vehicle {
-              width: 30rem;
-              font-family: inherit;
-              text-transform: uppercase;
-              font-weight: 700;
-              color: inherit;
-              background: transparent;
-              border: 2px solid #54b454;
-              padding: 1rem 1rem;
-              font-size: 1.8rem;
-              border-radius: 10px;
-              margin-bottom: 2rem;
-            }
-            .options {
-              font-size: 1.6rem;
-              background-color: #333;
-              color: #fbfbfb;
-              text-transform: uppercase;
-            }
-          }
-          .box {
-            .checkbox {
+          .form {
+            padding: 1rem 2rem;
+            .label {
               display: flex;
-              align-items: center;
+              flex-direction: column;
               gap: 1rem;
-              font-size: 2.5rem;
               font-weight: 700;
               text-transform: uppercase;
+              font-size: 2.5rem;
 
-              .input {
-                margin-right: 1rem;
-                zoom: 1.5;
-                -webkit-transform: scale(12);
-                transform: scale(2);
+              .vehicle {
+                width: 30rem;
+                font-family: inherit;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: inherit;
+                background: transparent;
+                border: 2px solid #54b454;
+                padding: 1rem 1rem;
+                font-size: 1.8rem;
+                border-radius: 10px;
+                margin-bottom: 2rem;
+              }
+              .options {
+                font-size: 1.6rem;
+                background-color: #333;
+                color: #fbfbfb;
+                text-transform: uppercase;
+              }
+            }
+            .box {
+              .checkbox {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-size: 2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-left: 1rem;
+
+                .input {
+                  margin-right: 1rem;
+                  zoom: 1.5;
+                  -webkit-transform: scale(12);
+                  transform: scale(2);
+                }
               }
             }
           }
@@ -130,6 +135,28 @@
         width: 50%;
         display: flex;
         justify-content: center;
+      }
+
+      .duration {
+        padding: 2rem 12.5rem;
+        .secondary_heading {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 2.5rem;
+          color: #2e2e2e;
+        }
+
+        .form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10rem;
+        }
+        .buttons {
+          display: flex;
+          justify-content: center;
+          gap: 3rem;
+        }
       }
     }
 
@@ -168,4 +195,27 @@
 
 .hidden {
   display: none;
+}
+
+.durationLabel {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+
+  .durationInput {
+    width: 20rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: inherit;
+    background: transparent;
+    border: 2px solid #54b454;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 2rem;
+  }
 }

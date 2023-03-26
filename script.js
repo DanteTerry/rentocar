@@ -48,6 +48,10 @@ close.addEventListener("click", function (e) {
 // default select element
 window.onload = function () {
   document.querySelector(".vehicle").selectedIndex = 0;
+  const input = document.querySelectorAll(".durationInput");
+  input.forEach((element) => {
+    element.value = "";
+  });
 };
 
 // rendering select option dynamically

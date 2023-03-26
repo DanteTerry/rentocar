@@ -22,3 +22,23 @@ body {
   background-color: #54b454;
   color: #fff;
 }
+
+.btn {
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  background-color: #000;
+  font-family: inherit;
+  font-size: 2rem;
+  &:hover {
+    background-color: #54b454;
+    color: #fff;
+  }
+}
