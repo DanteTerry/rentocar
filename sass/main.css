@@ -509,6 +509,7 @@ body {
 
 .overlay {
   width: 100%;
+  height: 100%;
   padding: 2rem 12.5rem;
   position: absolute;
   top: 0%;
@@ -563,30 +564,25 @@ body {
   text-transform: uppercase;
 }
 .overlay .bookNow .progress .numbers .number .span_num {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.8rem;
-  text-align: center;
+  padding: 3px 13px;
   border: 3px solid #333;
   border-radius: 50%;
   margin-top: 1.5rem;
-  height: 40px;
-  width: 40px;
-  position: relative;
 }
-.overlay .bookNow .container .select {
-  margin-top: 5rem;
+.overlay .bookNow .progress .numbers .number .one {
+  padding: 3px 14px;
 }
-.overlay .bookNow .container .select .vehicle {
+.overlay .bookNow .selectCar {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 5rem;
   align-items: center;
 }
-.overlay .bookNow .container .select .vehicle .form {
+.overlay .bookNow .selectCar .select .form {
   padding: 1rem 2rem;
 }
-.overlay .bookNow .container .select .vehicle .form .label {
+.overlay .bookNow .selectCar .select .form .label {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -594,7 +590,7 @@ body {
   text-transform: uppercase;
   font-size: 2.5rem;
 }
-.overlay .bookNow .container .select .vehicle .form .label .vehicle {
+.overlay .bookNow .selectCar .select .form .label .vehicle {
   width: 30rem;
   font-family: inherit;
   text-transform: uppercase;
@@ -607,50 +603,29 @@ body {
   border-radius: 10px;
   margin-bottom: 2rem;
 }
-.overlay .bookNow .container .select .vehicle .form .label .options {
+.overlay .bookNow .selectCar .select .form .label .options {
   font-size: 1.6rem;
   background-color: #333;
   color: #fbfbfb;
   text-transform: uppercase;
 }
-.overlay .bookNow .container .select .vehicle .form .box .checkbox {
+.overlay .bookNow .selectCar .select .form .box .checkbox {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 1rem;
 }
-.overlay .bookNow .container .select .vehicle .form .box .checkbox .input {
+.overlay .bookNow .selectCar .select .form .box .checkbox .input {
   margin-right: 1rem;
   zoom: 1.5;
   transform: scale(2);
 }
-.overlay .bookNow .container .selected_imgs {
+.overlay .bookNow .selectCar .selected_imgs {
   width: 50%;
   display: flex;
   justify-content: center;
-}
-.overlay .bookNow .container .duration {
-  padding: 2rem 12.5rem;
-}
-.overlay .bookNow .container .duration .secondary_heading {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #2e2e2e;
-}
-.overlay .bookNow .container .duration .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
-}
-.overlay .bookNow .container .duration .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
 }
 .overlay .bookNow .button {
   display: flex;
@@ -683,26 +658,4 @@ body {
 
 .hidden {
   display: none;
-}
-
-.durationLabel {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-}
-.durationLabel .durationInput {
-  width: 20rem;
-  font-family: inherit;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: inherit;
-  background: transparent;
-  border: 2px solid #54b454;
-  padding: 1rem 1rem;
-  font-size: 1.8rem;
-  border-radius: 10px;
-  outline: none;
-  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */

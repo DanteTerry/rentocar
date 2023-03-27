@@ -48,10 +48,6 @@ close.addEventListener("click", function (e) {
 // default select element
 window.onload = function () {
   document.querySelector(".vehicle").selectedIndex = 0;
-  const input = document.querySelectorAll(".durationInput");
-  input.forEach((element) => {
-    element.value = "";
-  });
 };
 
 // rendering select option dynamically
@@ -138,10 +134,9 @@ selectBrand.addEventListener("change", function () {
     <option class="options" value="choose" selected>SELECT MODAL</option>
     <option class="options" value="911">Porsche 911 GT3</option>
     <option class="options" value="taycan">Porsche Taycan</option>
-    <option class="options" value="panamera">Porsche Panamera </option>
-    <option class="options" value="718spyder">Porsche 718 Spyder</option>
     <option class="options" value="718">Porsche 718 Cayman GT4</option>
-    `;
+    <option class="options" value="718spyder">Porsche 718 Spyder</option>
+    <option class="options" value="panamera">Porsche Panamera Turbo S </option>`;
     selectModal.addEventListener("change", function () {
       const selectedModal = selectModal.value;
 
@@ -206,11 +201,11 @@ selectBrand.addEventListener("change", function () {
   } else if (selectedValue === "rolls-royce") {
     selectModal.innerHTML = `
     <option class="options" value="choose" selected>SELECT MODAL</option>
-    <option class="options" value="phantom">Rolls Royce Phantom</option>
-    <option class="options" value="ghost">Rolls Royce Ghost</option>
-    <option class="options" value="wraith">Rolls Royce Wraith</option>
-    <option class="options" value="dawn">Rolls Royce Dawn</option>
-    <option class="options" value="cullinan">Rolls Royce Cullinan</option>`;
+    <option class="options" value="phantom">Rolls-Royce Phantom</option>
+    <option class="options" value="ghost">Rolls-Royce Ghost</option>
+    <option class="options" value="wraith">Rolls-Royce Wraith</option>
+    <option class="options" value="dawn">Rolls-Royce Dawn</option>
+    <option class="options" value="cullinan">Rolls-Royce Cullinan</option>`;
     selectModal.addEventListener("change", function () {
       const selectedModal = selectModal.value;
 
