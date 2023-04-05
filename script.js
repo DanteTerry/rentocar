@@ -34,10 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
 // open and close book modal
 const close = document.querySelector(".close");
 const modal = document.querySelector(".overlay");
-const openModal = document.querySelector(".openForm");
-openModal.addEventListener("click", function (e) {
-  e.preventDefault;
-  modal.classList.remove("hidden");
+const openModal = document.querySelectorAll(".openForm");
+
+openModal.forEach((open) => {
+  open.addEventListener("click", function (e) {
+    e.preventDefault;
+    modal.classList.remove("hidden");
+    console.log("modal removed");
+  });
 });
 
 close.addEventListener("click", function (e) {
